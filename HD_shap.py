@@ -61,7 +61,7 @@ profile_shap_pca = pd.DataFrame(ep_explanation.dim_reduct(e_profile=profile_shap
 pca_name = "MDS"
 model_name = str(clf).split("(")[0]
 
-ep_explanation.fig_display_2d(model=model_name, pca=profile_shap_pca,e_profile=profile_shap, add_dataset = add_data, save=True, pca_name = pca_name)
+ep_explanation.fig_display_2d(model=model_name, pca=profile_shap_pca,e_profile=profile_shap, add_dataset = add_data, save=True, pca_name = pca_name) 
 
 ## read preprocessed data
 X_pca = pd.DataFrame(ep_explanation.dim_reduct(e_profile=explain_X), columns=["PC1","PC2"])
